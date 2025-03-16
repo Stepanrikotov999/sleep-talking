@@ -1,0 +1,54 @@
+
+/*Портрет автора*/
+.text>img{
+	width: 9rem;
+	float: left;
+	margin-right: 1rem;
+}
+
+/*Картины*/
+.artworks{
+	display: flex;
+	flex-direction: column;
+}
+
+.artworks img{
+	width: 100%;
+	border-style: ridge;
+	border-width: 8px;
+	border-color: #966A4F;
+}
+
+.artworks>div{	
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	margin-top: 3rem;
+}
+
+
+/*Заголовок h2*/
+.text>#tea{
+	text-align: center;
+	border-bottom-style: none;
+	border-top-style: solid;
+	border-top-width:3px;
+	padding-top: 1rem;
+}
+
+@media(max-width:920px){
+	.text>img{
+		float: none;
+	}
+	
+}
+@media(max-width:780px){
+	h1{
+		font-size: 1.5rem;
+	}
+}
+@media(max-width:550px){
+	h1{
+		font-size: 1.2rem;
+	}
+}

@@ -1,0 +1,123 @@
+*{
+	font-family: monospace;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 28px;
+}
+
+.links{
+	height: 250px;
+	background-color: #373737;
+	margin-top: 
+}
+/*Изображение*/
+.picture{
+	width: 100%;
+	height: 800px;
+	background-image: url('https://www.grekovstudio.ru/wp-content/grand-media/image/_._._1941_._1966_._._110_200_.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*Заголовок на изображении*/
+.picture p{
+	padding-top: 200px;
+	color: white;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+
+/*Навигационная панель*/
+.nav-bar{
+	background: linear-gradient(to right, #444C38, #679267);
+	position: sticky;
+	top: 0px;
+}
+.drop{
+	display: inline-block;
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+
+
+/*Кнопки панели*/
+.menu{
+	text-decoration: none;
+	border-style: solid;
+	border-radius: 7px;
+	border-color: #728639;
+	color: #728639;
+	padding-inline: 10px;
+	margin-left: 30px;
+	font-size: 1rem;
+	cursor: pointer;
+	display: inline-block;
+}
+
+
+.autor a{
+	text-decoration: none;
+	border-style: solid;
+	border-color: #728639;
+	border-radius: 7px;
+	color: #728639;
+	padding-inline: 10px;
+	font-size: 1rem;
+	background-color: #444C38;
+}
+
+.autor{
+	display: none;
+	justify-content: space-evenly;
+	height: 250px;
+}
+
+
+/*Действия при наведении*/
+.menu:hover,
+.autor a:hover{
+	background-color: #FAED82;
+}
+
+.drop:hover .autor{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 52px;
+	left: 30px;
+}
+
+
+
+/*Медиа запросы на изменение размера текса заголовка и кнопки, расстояние от кнопки до списка*/
+
+@media(max-width: 650px){
+	html{
+		font-size: 23px;
+	}
+	.drop:hover .autor{
+		position: absolute;
+		top: 47px;
+	}
+}
+
+@media(max-width: 450px){
+	html{
+		font-size: 17px;
+	}
+	.drop:hover .autor{
+		position: absolute;
+		top: 43px;
+	}
+}
+
+@media(max-width: 740px){
+	.picture p{
+		padding-top: 120px;
+	}
+}
