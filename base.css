@@ -8,11 +8,7 @@ html{
 	font-size: 28px;
 }
 
-.links{
-	height: 250px;
-	background-color: #373737;
-	margin-top: 
-}
+
 /*Изображение*/
 .picture{
 	width: 100%;
@@ -98,7 +94,7 @@ html{
 
 @media(max-width: 650px){
 	html{
-		font-size: 23px;
+		font-size: 25px;
 	}
 	.drop:hover .autor{
 		position: absolute;
@@ -108,7 +104,7 @@ html{
 
 @media(max-width: 450px){
 	html{
-		font-size: 17px;
+		font-size: 20px;
 	}
 	.drop:hover .autor{
 		position: absolute;
